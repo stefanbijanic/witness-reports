@@ -5,6 +5,7 @@ import Router from "./router";
 import ApplicationResources from "./common/application-resources.interface";
 import WitnessReportRouter from "./components/witness-report.router";
 import WitnessReportService from "./components/witness-report.service";
+
 async function main() {
     const app: express.Application = express();
     let router = express.Router();
