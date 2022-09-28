@@ -11,6 +11,10 @@ export default class WitnessReportController extends BaseController {
             res.status(400).send("Invalid country provided");
             return;
         }
+        if ((typeof checkLocationByIP).toString() === "ErrorResponse") {
+            res.send(checkLocationByIP);
+            return;
+        }
 
         const phoneNumberDetails = await this.services.witnessReportService.validatePhoneNumber(body.phoneNumber, body.countryInitials);
         if (!phoneNumberDetails) {
@@ -23,10 +27,18 @@ export default class WitnessReportController extends BaseController {
             res.status(400).send("Title does not egzist in FBI database");
             return;
         }
+        if ((typeof fbiMostWantedList).toString() === "ErrorResponse") {
+            res.send(fbiMostWantedList);
+            return;
+        }
 
         const writeReport = await this.services.witnessReportService.writeReport(body)
         if (!writeReport) {
             res.status(400).send("Report failed");
+            return;
+        }
+        if ((typeof writeReport).toString() === "ErrorResponse") {
+            res.send(writeReport);
             return;
         }
         
