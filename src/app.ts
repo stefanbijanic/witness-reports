@@ -1,6 +1,5 @@
 import * as express from "express";
 import "reflect-metadata";
-import {createConnection} from "typeorm";
 import Config from "./config/config";
 import Router from "./router";
 import ApplicationResources from "./common/application-resources.interface";
