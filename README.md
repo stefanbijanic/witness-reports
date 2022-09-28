@@ -4,7 +4,7 @@
 
 * 1. Create .env file using the .env.EXAMPLE
 
-* 3. Run "npm install" before running the application to install all dependencies
+* 2. Run "npm install" before running the application to install all dependencies
 
 
 # Running the application:
