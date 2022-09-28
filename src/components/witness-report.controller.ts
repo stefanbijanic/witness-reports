@@ -1,6 +1,5 @@
 import BaseController from "../common/base-controller.interface";
 import {Request, Response, NextFunction} from "express";
-var https = require('https');
 
 export default class WitnessReportController extends BaseController {
     public async createWitnessReport(req: Request, res: Response, next: NextFunction) {

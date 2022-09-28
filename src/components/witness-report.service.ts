@@ -2,7 +2,6 @@ import axios from "axios";
 import {isPossiblePhoneNumber, isValidPhoneNumber, parsePhoneNumber} from "libphonenumber-js";
 import ErrorResponse from "../common/error-response.interface";
 import * as dotenv from "dotenv";
-var https = require('https');
 import * as fs from 'fs';
 import { v4 as uuid } from 'uuid';
 import WitnessReportEntity from "./witness-report.entity";
