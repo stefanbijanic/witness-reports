@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "23f5992a-3999-49d1-9ad9-46f21b70cfd6",
+		"name": "Witness Report",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15480458"
+	},
+	"item": [
+		{
+			"name": "Create Report",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"MARAT VALERYEVICH TYUKOV\",\r\n    \"description\": \"ubise ga2\",\r\n    \"phoneNumber\": \"+381655315485\",\r\n    \"country\": \"RS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/witness-report",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"witness-report"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
