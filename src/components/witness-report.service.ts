@@ -45,7 +45,7 @@ export default class WitnessReportService {
             console.log(error)
             return ({
                 errorCode: 1001,
-                errorMessage: "error most wanted list",
+                errorMessage: "Cannot get most wanted list",
             });
         }
     }
